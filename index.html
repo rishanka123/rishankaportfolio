@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <!-- Font Awesome CDN link for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-GKZu+q0P5NUjBp6v59aVYB5JXq7U8bI2mT59m7fg7+qbsKmHoF6tQD2Y8gdLp+XpqTJRUr6e7wrZ+V36n4NYmA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home" onclick="showSection('home')">Home</a></li>
+                <li><a href="#about" onclick="showSection('about')">About</a></li>
+                <li><a href="#internships" onclick="showSection('internships')">Internships</a></li>
+                <li><a href="#projects" onclick="showSection('projects')">Projects</a></li>
+                <li><a href="#contact" onclick="showSection('contact')">Contact</a></li>
+                <li><a href="#resume" onclick="showSection('resume')">Resume</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <div id="home" class="section active">
+      <div class="container">
+          <h1 id="typewriter"></h1>
+          <div class="social-links">
+              <a href="linkedin.com/in/madamshetti-rishanka-946a88282" target="_blank" class="linkedin">
+                  <img src="imges/linkedin.png" alt="LinkedIn">
+              </a>
+              <a href="https://github.com/rishanka123" target="_blank" class="github">
+                  <img src="imges/github.png" alt="GitHub">
+              </a>
+              <a href="mailto:rishankam123@gmail.com" target="_blank" class="email">
+                  <img src="imges/mail.png" alt="Email">
+              </a>
+          </div>
+          
+          <!-- Image Section -->
+          <div class="image-section">
+              <h3>ITS ME!!</h3>
+              <img src="imges/profile.png" alt="M RISHANKA" style="width: 150px;">
+          </div>
+      </div>
+  </div>
+        
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About</h2>
+            <p>A motivated B.Tech undergraduate in Computer Science with strong leadership and continuous learning abilities. Proven success in project management and team collaboration. Seeking a position to apply my problem-solving skills and technical expertise in C, Python, and SQL to drive innovation and achieve organizational goals.</p>
+            
+            <!-- Skills Section -->
+            <div class="skills-section">
+                <h3>Skills</h3>
+                <div class="skills-box">
+                    <div class="skill">C</div>
+                    <div class="skill">Python</div>
+                    <div class="skill">Basic Java</div>
+                    <div class="skill">HTML & CSS</div>
+                    <div class="skill">SQL</div>
+                    <div class="skill">MS Word</div>
+                    <div class="skill">MS PowerPoint</div>
+                </div>
+            </div>
+            
+            <!-- Interests Section -->
+            <div class="interests-section">
+                <h3>Interests</h3>
+                <div class="interests-box">
+                    <div class="interest">Software Engineering</div>
+                    <div class="interest">Web Development</div>
+                    <div class="interest">Algorithms</div>
+                </div>
+            </div>
+          
+        </div>
+    </section>
+
+    <section id="internships" class="section">
+      <div class="container">
+          <h2>Internships</h2>
+          <div class="internship" onclick="toggleDetails('internship1-details')">
+              <h3>1. Cognifyz Technologies</h3>
+              <img src="imges/cognifyzz logo.jpeg" alt="Cognifyz Technologies" class="internship-logo">
+              <div id="internship1-details" class="internship-details">
+                  <h4>Role: Web Developer</h4>
+                  <p>Duration: May 2024 - June 2024</p>
+                  <p>Description: Produced technical documentation, encompassing user manuals and training materials, to guarantee content accuracy. Utilizing HTML, CSS, and JavaScript to create visually appealing and responsive web pages that met client requirements.</p>
+                  <p><a href="https://drive.google.com/file/d/1sOaK6oAZ_uvFpO8P78au4PCdkQH5Ch7-/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+          
+          <div class="internship" onclick="toggleDetails('internship2-details')">
+              <h3>2. JAVAT POINT</h3>
+              <img src="imges/javatpoint logo.png" alt="javatpoint" class="internship-logo">
+              <div id="internship2-details" class="internship-details">
+                  <h4>Role: Technical content writer</h4>
+                  <p>Duration: May 2023 - Nov 2024</p>
+                  <p>Description: It Involves creating written content that communicates complex technical information in a clear,concise and engaging manner.</p>
+                  <p><a href="https://drive.google.com/file/d/1VwtO3-gzuNVymkZFyeK898wYVxILRUl5/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+  
+          <div class="internship" onclick="toggleDetails('internship3-details')">
+              <h3>3. INTERNPE</h3>
+              <img src="imges/internpe logo.jpeg" alt="INTERNPE" class="internship-logo">
+              <div id="internship3-details" class="internship-details">
+                  <h4>Role: Java programming intern</h4>
+                  <p>Duration: May 2024 - June 2024</p>
+                  <p>Description: Successfully completed an intensive Java Programming Internship at Internpe. Honed my Java skills and contributed to exciting projects, earning recognition for dedication and expertise.</p>
+                  <p><a href="https://drive.google.com/file/d/1gI44iUyix1VjH8-c9JMWcClIc_nnOntX/view?usp=sharing" target="_blank" class="certificate-link">View Certificate</a></p>
+              </div>
+          </div>
+      </div>
+  </section>
+  
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project" onclick="toggleDetails('project1-details')">
+                <h3>Project 1: GAME DEVELOPMENT USING PYTHON</h3>
+                <img src="imges/lang detection.jpeg" alt="Language detection using nlp" class="project-image">
+                <div id="project1-details" class="project-details">
+                    <h4>Description:</h4>
+                    <p>The project focuses on building a language detection model using NLP
+                        techniques.
+                        The main objective is to accurately predict the language of a given text.
+                        It is capable of identifying 17 languages from text, featuring 
+                        preprocessing, Naive Bayes training, and high-accuracy evaluations</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>hey guys! click me </p>
+            <!-- Example of a direct link to a PDF -->
+            <p><a href="https://drive.google.com/file/d/1EKfXlXglSPmh6uBBdfgyS1ZfWgMkttiK/view?usp=sharing" target="_blank">View Resume</a></p>
+        </div>
+    </section>
+
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact</h2>
+            <div class="contact-form">
+                <div class="contact-info">
+                    <div class="info-box">
+                        <h3>Name:</h3>
+                        <input type="text" placeholder="Enter your name">
+                    </div>
+                    <div class="info-box">
+                        <h3>Email:</h3>
+                        <input type="email" placeholder="Enter your email">
+                    </div>
+                    <div class="info-box">
+                        <h3>Phone:</h3>
+                        <input type="tel" placeholder="Enter your phone number">
+                    </div>
+                </div>
+                <button class="submit-btn">Submit</button>
+            </div>
+        </div>
+    </section>
+
+</body>
+</html>
